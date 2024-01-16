@@ -1,9 +1,11 @@
-import {Footer} from "./partials/Footer.jsx";
+import ProductFiltersTabs from "./components/ProductFiltersTabs.jsx";
 
 function App() {
   return (
       <div className="font-roboto">
-          <Footer />
+          <ProductFiltersTabs />
+          {/*<Newsletter />*/}
+          {/*<Footer />*/}
       </div>
   )
 }
