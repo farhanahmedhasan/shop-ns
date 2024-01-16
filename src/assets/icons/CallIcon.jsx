@@ -1,4 +1,4 @@
-export default function Call(){
+export default function CallIcon(){
     return(
         <svg
             version="1.1"

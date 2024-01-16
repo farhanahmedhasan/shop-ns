@@ -1,6 +1,7 @@
-import Whatsapp from "../assets/icons/Whatsapp.jsx";
-import Call from "../assets/icons/Call.jsx";
+import NavLinkFooter from "../components/NavLinkFooter.jsx";
+import WhatsAppIcon from "../assets/icons/WhatsAppIcon.jsx";
 import GlobeIcon from "../assets/icons/GlobeIcon.jsx";
+import CallIcon from "../assets/icons/CallIcon.jsx";
 
 export function Footer(){
     return (
@@ -12,7 +13,7 @@ export function Footer(){
                     <ul className="space-y-8">
                         <li>
                             <button className="flex items-center space-x-2">
-                                <Whatsapp />
+                                <WhatsAppIcon />
                                 <span className="text-xs font-bold">WhatsApp</span>
                             </button>
                         </li>
@@ -20,7 +21,7 @@ export function Footer(){
                         <li>
                             <button>
                                 <div className="flex items-center space-x-2 mb-1">
-                                    <Call />
+                                    <CallIcon />
                                     <span className="text-xs font-bold">Call 900 456 003</span>
                                     <span className="text-[10px] text-[#16c691]">On-line</span>
                                 </div>
@@ -34,33 +35,15 @@ export function Footer(){
                 <div>
                     <h3 className="font-bold mb-6">Aid</h3>
                     <ul>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">To buy online</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Pay</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Shipment</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Returns</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Gift card</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Gift ticket</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Buy as a guest</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Electronic ticket</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Request invoice</a>
-                        </li>
+                        <NavLinkFooter href="#">To buy online</NavLinkFooter>
+                        <NavLinkFooter href="#">Pay</NavLinkFooter>
+                        <NavLinkFooter href="#">Shipment</NavLinkFooter>
+                        <NavLinkFooter href="#">Returns</NavLinkFooter>
+                        <NavLinkFooter href="#">Gift card</NavLinkFooter>
+                        <NavLinkFooter href="#">Gift ticket</NavLinkFooter>
+                        <NavLinkFooter href="#">Buy as a guest</NavLinkFooter>
+                        <NavLinkFooter href="#">Electronic ticket</NavLinkFooter>
+                        <NavLinkFooter href="#">Request invoice</NavLinkFooter>
                     </ul>
                 </div>
 
@@ -68,24 +51,12 @@ export function Footer(){
                 <div>
                     <h3 className="font-bold mb-6">We are BERSHKA</h3>
                     <ul>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">About BERSHKA</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Sustainability</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Work with us</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Affinity card</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Press</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Our shops</a>
-                        </li>
+                        <NavLinkFooter href="#">About BERSHKA</NavLinkFooter>
+                        <NavLinkFooter href="#">Sustainability</NavLinkFooter>
+                        <NavLinkFooter href="#">Work with us</NavLinkFooter>
+                        <NavLinkFooter href="#">Affinity card</NavLinkFooter>
+                        <NavLinkFooter href="#">Press</NavLinkFooter>
+                        <NavLinkFooter href="#">Our shops</NavLinkFooter>
                     </ul>
                 </div>
 
@@ -93,27 +64,13 @@ export function Footer(){
                 <div>
                     <h3 className="font-bold mb-6">It may interest you</h3>
                     <ul>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Women&apos;s dresses</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Women&apos;s jackets</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Women&apos;s coats</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Women&apos;s sweater and knit</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">baggy jeans</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Women&apos;s trousers</a>
-                        </li>
-                        <li>
-                            <a className="text-sm leading-[1.95312rem] cursor-pointer">Sales</a>
-                        </li>
+                        <NavLinkFooter href="#">Women&apos;s dresses</NavLinkFooter>
+                        <NavLinkFooter href="#">Women&apos;s jackets</NavLinkFooter>
+                        <NavLinkFooter href="#">Women&apos;s coats</NavLinkFooter>
+                        <NavLinkFooter href="#">Women&apos;s sweater and knit</NavLinkFooter>
+                        <NavLinkFooter href="#">baggy jeans</NavLinkFooter>
+                        <NavLinkFooter href="#">Women&apos;s trousers</NavLinkFooter>
+                        <NavLinkFooter href="#">Sales</NavLinkFooter>
                     </ul>
                 </div>
 
@@ -168,32 +125,14 @@ export function Footer(){
             <section className="py-4">
                 <div className="flex justify-between">
                     <ul className="flex">
-                        <li className="flex items-center">
-                            <a href="#" className="text-sm">Terms and conditions of purchase</a>
-                            <span className="mx-2.5 h-1 w-1 bg-black rounded-full"></span>
-                        </li>
-
-                        <li className="flex items-center">
-                            <a href="#" className="text-sm">Privacy Policy</a>
-                            <span className="mx-2.5 h-1 w-1 bg-black rounded-full"></span>
-                        </li>
-
-                        <li className="flex items-center">
-                            <a href="#" className="text-sm">Cookies policy</a>
-                            <span className="mx-2.5 h-1 w-1 bg-black rounded-full"></span>
-                        </li>
-
-                        <li className="flex items-center">
-                            <a href="#" className="text-sm">Set cookies</a>
-                            <span className="mx-2.5 h-1 w-1 bg-black rounded-full"></span>
-                        </li>
-
-                        <li className="flex items-center">
-                            <a href="#" className="text-sm">SiteMap</a>
-                        </li>
+                        <NavLinkFooter dot="right" href="#">Terms and conditions of purchase</NavLinkFooter>
+                        <NavLinkFooter dot="right" href="#">Privacy Policy</NavLinkFooter>
+                        <NavLinkFooter dot="right" href="#">Cookies policy</NavLinkFooter>
+                        <NavLinkFooter dot="right" href="#">Set cookies</NavLinkFooter>
+                        <NavLinkFooter href="#">SiteMap</NavLinkFooter>
                     </ul>
 
-                    <div className="flex">
+                    <div className="flex items-center">
                         <button className="flex items-center space-x-2 mr-10">
                             <GlobeIcon />
                             <span className="text-sm font-medium">Spain | Spanish</span>
