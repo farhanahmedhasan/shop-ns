@@ -5,8 +5,8 @@ import CallIcon from "../assets/icons/CallIcon.jsx";
 
 export function Footer(){
     return (
-        <footer className="px-16 pt-10">
-            <section className="flex justify-between py-10 border-t border-b border-[#e6e6e6]">
+        <footer className="px-6 pt-10 sm:px-16">
+            <section className="flex flex-wrap justify-between gap-8 sm:gap-10 py-10 border-t border-b border-[#e6e6e6]">
                 {/* Need Help */}
                 <div>
                     <h3 className="font-bold mb-8">Need help?</h3>
@@ -123,8 +123,8 @@ export function Footer(){
 
             {/* Copyright */}
             <section className="py-4">
-                <div className="flex justify-between">
-                    <ul className="flex">
+                <div className="flex flex-wrap justify-between gap-8 sm:gap-10">
+                    <ul className="flex flex-wrap">
                         <NavLinkFooter dot="right" href="#">Terms and conditions of purchase</NavLinkFooter>
                         <NavLinkFooter dot="right" href="#">Privacy Policy</NavLinkFooter>
                         <NavLinkFooter dot="right" href="#">Cookies policy</NavLinkFooter>
