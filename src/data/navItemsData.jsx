@@ -1,5 +1,6 @@
 const navItemsData = [
     {
+        id: 0,
         title: 'WOMEN',
         url:'#',
         submenu: [
@@ -13,6 +14,7 @@ const navItemsData = [
         ],
     },
     {
+        id:1,
         title: 'MAN',
         url:'#',
         submenu: [
@@ -25,6 +27,7 @@ const navItemsData = [
         ],
     },
     {
+        id:2,
         title: 'BSK TEEN',
         url:'#',
         submenu: [
