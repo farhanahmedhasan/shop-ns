@@ -35,7 +35,7 @@ export default function Dropdown({links, selected, setDropdown}){
             <div>
                 <p className="pb-6 text-xs font-medium text-gray-500">CATEGORIES</p>
                 <ul className="h-[280px] flex gap-y-2 gap-x-8 flex-col flex-wrap">
-                    {links[submenuSelected].categories.map(category => {
+                    {links[submenuSelected]?.categories?.map(category => {
                         return(
                             <li key={category.id}>
                                 <a className="text-xs" href={category.url}>{category.title}</a>
