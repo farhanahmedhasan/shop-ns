@@ -18,7 +18,7 @@ export default function MenuItems({onMouseEnter,setDropdown,selected,dropdown,it
                         >
                             {item.title}
                         </a>
-                        {dropdown && <Dropdown dropdown={dropdown}  links={navItemsData[selected]?.submenu} setDropdown={setDropdown}/>}
+                        {true && <Dropdown dropdown={dropdown} links={navItemsData[0]?.submenu} selected={selected} setDropdown={setDropdown}/>}
                 </div>
             ) : (
                 <a href="#" className="hover:border-b hover:border-black text-sm">{item.title}</a>
