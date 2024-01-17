@@ -801,7 +801,6 @@ export default function ProductFiltersTabs(){
                         </div>
                     })}
                 </TabPanel>
-
             </Tabs>
         </section>
     )
