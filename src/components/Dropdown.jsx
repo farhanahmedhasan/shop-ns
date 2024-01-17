@@ -25,8 +25,8 @@ export default function Dropdown({links, setSelected}){
                 </div>
                 <div className="space-y-3">
                     {links?.map((submenu, index) => (
-                        <li key={index} onMouseEnter={()=> handleNestedSubMenuMouseEnter(submenu.id)}>
-                            <a href={submenu.url}>{submenu.title}</a>
+                        <li key={index}>
+                            <a href={submenu.url} onMouseEnter={()=> handleNestedSubMenuMouseEnter(submenu.id)}>{submenu.title}</a>
                         </li>
                     ))}
                 </div>

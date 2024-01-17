@@ -153,7 +153,68 @@ const navItemsData = [
                     },
                 ]
             },
-            { id: 2, title: 'ACCESSORIES', url: '/#' },
+            {
+                id: 2,
+                title: 'ACCESSORIES',
+                url: '/#',
+                categories: [
+                    {
+                        id:0,
+                        title:"See everything",
+                        url:'#'
+                    },
+                    {
+                        id:1,
+                        title:"Imitation jewelry",
+                        url:'#'
+                    },
+                    {
+                        id:2,
+                        title:"Spot",
+                        url:'#'
+                    },
+                    {
+                        id:3,
+                        title:"Scarves",
+                        url:'#'
+                    },
+                    {
+                        id:4,
+                        title:"Caps",
+                        url:'#'
+                    },
+                    {
+                        id:5,
+                        title:"Handbags",
+                        url:'#'
+                    },
+                    {
+                        id:6,
+                        title:"Hair accessories",
+                        url:'#'
+                    },
+                    {
+                        id:7,
+                        title:"Glasses",
+                        url:'#'
+                    },
+                    {
+                        id:8,
+                        title:"Belts",
+                        url:'#'
+                    },
+                    {
+                        id:9,
+                        title:"Socks",
+                        url:'#'
+                    },
+                    {
+                        id:10,
+                        title:"Eau de Toilette®",
+                        url:'#'
+                    },
+                ]
+            },
             { id: 3, title: 'THE BERSHKA PRINT SHOP', url: '/#' },
             { id: 4, title: 'PERSONALIZATION', url: '/#' },
             { id: 5, title: 'GET THE LOOK', url: '/#' },
@@ -165,9 +226,252 @@ const navItemsData = [
         title: 'MAN',
         url:'#',
         submenu: [
-            { title: 'SHOES', url: '/#' },
-            { title: 'ACCESSORIES', url: '/#' },
-            { title: 'THE BERSHKA PRINT SHOP', url: '/#' },
+            {
+                id: 0,
+                title: 'SHOES',
+                url: '/#',
+                categories: [
+                    {
+                        id:0,
+                        title:"Special prices Man Shoes",
+                        url:'#'
+                    },
+                    {
+                        id:1,
+                        title:"The most sold",
+                        url:'#'
+                    },
+                    {
+                        id:2,
+                        title:"Coats",
+                        url:'#'
+                    },
+                    {
+                        id:3,
+                        title:"Pants",
+                        url:'#'
+                    },
+                    {
+                        id:4,
+                        title:"Jeans",
+                        url:'#'
+                    },
+                    {
+                        id:5,
+                        title:"Dresses and jumpsuits",
+                        url:'#'
+                    },
+                    {
+                        id:6,
+                        title:"Skirts and shorts",
+                        url:'#'
+                    },
+                    {
+                        id:7,
+                        title:"Sweatshirts",
+                        url:'#'
+                    },
+                    {
+                        id:8,
+                        title:"Sweaters and cardigans",
+                        url:'#'
+                    },
+                    {
+                        id:9,
+                        title:"T-shirts",
+                        url:'#'
+                    },
+                    {
+                        id:10,
+                        title:"Tops and corsets",
+                        url:'#'
+                    },
+                    {
+                        id:11,
+                        title:"Shirts and blouses",
+                        url:'#'
+                    },
+                    {
+                        id:12,
+                        title:"Spot",
+                        url:'#'
+                    },
+                    {
+                        id:13,
+                        title:"Collaborations®",
+                        url:'#'
+                    },
+                    {
+                        id:14,
+                        title:"Gift card®",
+                        url:'#'
+                    },
+                ]
+            },
+            {
+                id: 1,
+                title: 'ACCESSORIES',
+                url: '/#',
+                categories: [
+                    {
+                        id:0,
+                        title:"Special prices Man ACCESSORIES",
+                        url:'#'
+                    },
+                    {
+                        id:1,
+                        title:"The most sold",
+                        url:'#'
+                    },
+                    {
+                        id:2,
+                        title:"Coats",
+                        url:'#'
+                    },
+                    {
+                        id:3,
+                        title:"Pants",
+                        url:'#'
+                    },
+                    {
+                        id:4,
+                        title:"Jeans",
+                        url:'#'
+                    },
+                    {
+                        id:5,
+                        title:"Dresses and jumpsuits",
+                        url:'#'
+                    },
+                    {
+                        id:6,
+                        title:"Skirts and shorts",
+                        url:'#'
+                    },
+                    {
+                        id:7,
+                        title:"Sweatshirts",
+                        url:'#'
+                    },
+                    {
+                        id:8,
+                        title:"Sweaters and cardigans",
+                        url:'#'
+                    },
+                    {
+                        id:9,
+                        title:"T-shirts",
+                        url:'#'
+                    },
+                    {
+                        id:10,
+                        title:"Tops and corsets",
+                        url:'#'
+                    },
+                    {
+                        id:11,
+                        title:"Shirts and blouses",
+                        url:'#'
+                    },
+                    {
+                        id:12,
+                        title:"Spot",
+                        url:'#'
+                    },
+                    {
+                        id:13,
+                        title:"Collaborations®",
+                        url:'#'
+                    },
+                    {
+                        id:14,
+                        title:"Gift card®",
+                        url:'#'
+                    },
+                ]
+            },
+            {
+                id: 2,
+                title: 'THE BERSHKA PRINT SHOP',
+                url: '/#',
+                categories: [
+                    {
+                        id:0,
+                        title:"Special prices Man PRINT SHOP",
+                        url:'#'
+                    },
+                    {
+                        id:1,
+                        title:"The most sold",
+                        url:'#'
+                    },
+                    {
+                        id:2,
+                        title:"Coats",
+                        url:'#'
+                    },
+                    {
+                        id:3,
+                        title:"Pants",
+                        url:'#'
+                    },
+                    {
+                        id:4,
+                        title:"Jeans",
+                        url:'#'
+                    },
+                    {
+                        id:5,
+                        title:"Dresses and jumpsuits",
+                        url:'#'
+                    },
+                    {
+                        id:6,
+                        title:"Skirts and shorts",
+                        url:'#'
+                    },
+                    {
+                        id:7,
+                        title:"Sweatshirts",
+                        url:'#'
+                    },
+                    {
+                        id:8,
+                        title:"Sweaters and cardigans",
+                        url:'#'
+                    },
+                    {
+                        id:9,
+                        title:"T-shirts",
+                        url:'#'
+                    },
+                    {
+                        id:10,
+                        title:"Tops and corsets",
+                        url:'#'
+                    },
+                    {
+                        id:11,
+                        title:"Shirts and blouses",
+                        url:'#'
+                    },
+                    {
+                        id:12,
+                        title:"Spot",
+                        url:'#'
+                    },
+                    {
+                        id:13,
+                        title:"Collaborations®",
+                        url:'#'
+                    },
+                    {
+                        id:14,
+                        title:"Gift card®",
+                        url:'#'
+                    },
+                ]
+            },
             { title: 'PERSONALIZATION', url: '/#' },
             { title: 'GET THE LOOK', url: '/#' },
             { title: 'SPECIAL PRICES', url: '/#' },
@@ -178,9 +482,334 @@ const navItemsData = [
         title: 'BSK TEEN',
         url:'#',
         submenu: [
-            { title: 'CLOTHES', url: '/#' },
-            { title: 'SHOES', url: '/#' },
-            { title: 'ACCESSORIES', url: '/#' },
+            {
+                id: 0,
+                title: 'CLOTHES',
+                url: '/#',
+                categories: [
+                    {
+                        id:0,
+                        title:"Special prices Teen Cloths",
+                        url:'#'
+                    },
+                    {
+                        id:1,
+                        title:"The most sold",
+                        url:'#'
+                    },
+                    {
+                        id:2,
+                        title:"Coats",
+                        url:'#'
+                    },
+                    {
+                        id:3,
+                        title:"Pants",
+                        url:'#'
+                    },
+                    {
+                        id:4,
+                        title:"Jeans",
+                        url:'#'
+                    },
+                    {
+                        id:5,
+                        title:"Dresses and jumpsuits",
+                        url:'#'
+                    },
+                    {
+                        id:6,
+                        title:"Skirts and shorts",
+                        url:'#'
+                    },
+                    {
+                        id:7,
+                        title:"Sweatshirts",
+                        url:'#'
+                    },
+                    {
+                        id:8,
+                        title:"Sweaters and cardigans",
+                        url:'#'
+                    },
+                    {
+                        id:9,
+                        title:"T-shirts",
+                        url:'#'
+                    },
+                    {
+                        id:10,
+                        title:"Tops and corsets",
+                        url:'#'
+                    },
+                    {
+                        id:11,
+                        title:"Shirts and blouses",
+                        url:'#'
+                    },
+                    {
+                        id:12,
+                        title:"Spot",
+                        url:'#'
+                    },
+                    {
+                        id:13,
+                        title:"Collaborations®",
+                        url:'#'
+                    },
+                    {
+                        id:14,
+                        title:"Gift card®",
+                        url:'#'
+                    },
+                ]
+            },
+            {
+                id: 1,
+                title: 'SHOES',
+                url: '/#',
+                categories: [
+                    {
+                        id:0,
+                        title:"Special prices Teen Shoes",
+                        url:'#'
+                    },
+                    {
+                        id:1,
+                        title:"The most sold",
+                        url:'#'
+                    },
+                    {
+                        id:2,
+                        title:"Coats",
+                        url:'#'
+                    },
+                    {
+                        id:3,
+                        title:"Pants",
+                        url:'#'
+                    },
+                    {
+                        id:4,
+                        title:"Jeans",
+                        url:'#'
+                    },
+                    {
+                        id:5,
+                        title:"Dresses and jumpsuits",
+                        url:'#'
+                    },
+                    {
+                        id:6,
+                        title:"Skirts and shorts",
+                        url:'#'
+                    },
+                    {
+                        id:7,
+                        title:"Sweatshirts",
+                        url:'#'
+                    },
+                    {
+                        id:8,
+                        title:"Sweaters and cardigans",
+                        url:'#'
+                    },
+                    {
+                        id:9,
+                        title:"T-shirts",
+                        url:'#'
+                    },
+                    {
+                        id:10,
+                        title:"Tops and corsets",
+                        url:'#'
+                    },
+                    {
+                        id:11,
+                        title:"Shirts and blouses",
+                        url:'#'
+                    },
+                    {
+                        id:12,
+                        title:"Spot",
+                        url:'#'
+                    },
+                    {
+                        id:13,
+                        title:"Collaborations®",
+                        url:'#'
+                    },
+                    {
+                        id:14,
+                        title:"Gift card®",
+                        url:'#'
+                    },
+                ]
+            },
+            {
+                id: 2,
+                title: 'ACCESSORIES',
+                url: '/#',
+                categories: [
+                    {
+                        id:0,
+                        title:"Special prices Teen ACCESSORIES",
+                        url:'#'
+                    },
+                    {
+                        id:1,
+                        title:"The most sold",
+                        url:'#'
+                    },
+                    {
+                        id:2,
+                        title:"Coats",
+                        url:'#'
+                    },
+                    {
+                        id:3,
+                        title:"Pants",
+                        url:'#'
+                    },
+                    {
+                        id:4,
+                        title:"Jeans",
+                        url:'#'
+                    },
+                    {
+                        id:5,
+                        title:"Dresses and jumpsuits",
+                        url:'#'
+                    },
+                    {
+                        id:6,
+                        title:"Skirts and shorts",
+                        url:'#'
+                    },
+                    {
+                        id:7,
+                        title:"Sweatshirts",
+                        url:'#'
+                    },
+                    {
+                        id:8,
+                        title:"Sweaters and cardigans",
+                        url:'#'
+                    },
+                    {
+                        id:9,
+                        title:"T-shirts",
+                        url:'#'
+                    },
+                    {
+                        id:10,
+                        title:"Tops and corsets",
+                        url:'#'
+                    },
+                    {
+                        id:11,
+                        title:"Shirts and blouses",
+                        url:'#'
+                    },
+                    {
+                        id:12,
+                        title:"Spot",
+                        url:'#'
+                    },
+                    {
+                        id:13,
+                        title:"Collaborations®",
+                        url:'#'
+                    },
+                    {
+                        id:14,
+                        title:"Gift card®",
+                        url:'#'
+                    },
+                ]
+            },
+            {
+                id: 3,
+                title: 'GLASSES',
+                url: '/#',
+                categories: [
+                    {
+                        id:0,
+                        title:"Special prices Teen GLASSES",
+                        url:'#'
+                    },
+                    {
+                        id:1,
+                        title:"The most sold",
+                        url:'#'
+                    },
+                    {
+                        id:2,
+                        title:"Coats",
+                        url:'#'
+                    },
+                    {
+                        id:3,
+                        title:"Pants",
+                        url:'#'
+                    },
+                    {
+                        id:4,
+                        title:"Jeans",
+                        url:'#'
+                    },
+                    {
+                        id:5,
+                        title:"Dresses and jumpsuits",
+                        url:'#'
+                    },
+                    {
+                        id:6,
+                        title:"Skirts and shorts",
+                        url:'#'
+                    },
+                    {
+                        id:7,
+                        title:"Sweatshirts",
+                        url:'#'
+                    },
+                    {
+                        id:8,
+                        title:"Sweaters and cardigans",
+                        url:'#'
+                    },
+                    {
+                        id:9,
+                        title:"T-shirts",
+                        url:'#'
+                    },
+                    {
+                        id:10,
+                        title:"Tops and corsets",
+                        url:'#'
+                    },
+                    {
+                        id:11,
+                        title:"Shirts and blouses",
+                        url:'#'
+                    },
+                    {
+                        id:12,
+                        title:"Spot",
+                        url:'#'
+                    },
+                    {
+                        id:13,
+                        title:"Collaborations®",
+                        url:'#'
+                    },
+                    {
+                        id:14,
+                        title:"Gift card®",
+                        url:'#'
+                    },
+                ]
+            },
             { title: 'THE BERSHKA PRINT SHOP', url: '/#' },
             { title: 'PERSONALIZATION', url: '/#' },
             { title: 'GET THE LOOK', url: '/#' },
