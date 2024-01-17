@@ -307,6 +307,28 @@ const navItemsData = [
             { id: 7, title: 'GET THE LOOK', url: '/#' },
             { id: 8, title: 'SPECIAL PRICES', url: '/#' },
         ],
+        getLooks: [
+            {
+                id: 0,
+                title: "StreetWear",
+                image: "https://source.unsplash.com/random"
+            },
+            {
+                id: 1,
+                title: "Casual",
+                image: "https://source.unsplash.com/random"
+            },
+            {
+                id: 2,
+                title: "Lather",
+                image: "https://source.unsplash.com/random"
+            },
+            {
+                id: 3,
+                title: "Party",
+                image: "https://source.unsplash.com/random"
+            },
+        ]
     },
     {
         id:1,
@@ -662,6 +684,28 @@ const navItemsData = [
                 url: '/#'
             },
         ],
+        getLooks: [
+            {
+                id: 0,
+                title: "StreetWear",
+                image: "https://source.unsplash.com/random"
+            },
+            {
+                id: 1,
+                title: "Casual",
+                image: "https://source.unsplash.com/random"
+            },
+            {
+                id: 2,
+                title: "Lather",
+                image: "https://source.unsplash.com/random"
+            },
+            {
+                id: 3,
+                title: "Party",
+                image: "https://source.unsplash.com/random"
+            },
+        ]
     },
     {
         id:2,
