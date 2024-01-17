@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-export default function Dropdown({links, selected, setSelected}){
+export default function Dropdown({links, setSelected}){
     const [submenuSelected, setSubmenuSelected] = useState(-1)
 
     function handleMouseLeave(){
@@ -25,7 +25,7 @@ export default function Dropdown({links, selected, setSelected}){
                 </div>
                 <div className="space-y-3">
                     {links?.map((submenu, index) => (
-                        <li key={index} onMouseEnter={handleNestedSubMenuMouseEnter}>
+                        <li key={index} onMouseEnter={()=> handleNestedSubMenuMouseEnter(submenu.id)}>
                             <a href={submenu.url}>{submenu.title}</a>
                         </li>
                     ))}
@@ -33,17 +33,17 @@ export default function Dropdown({links, selected, setSelected}){
             </div>
 
             {/* nested submenu */}
-            <NestedSubMenu links={links}/>
+            <NestedSubMenu submenuSelected={submenuSelected} links={links}/>
         </div>
     );
 }
 
-function NestedSubMenu({links}){
+function NestedSubMenu({links, submenuSelected}){
     return(
         <div>
             <p className="pb-6 text-xs font-medium text-gray-500">CATEGORIES</p>
             <ul className="h-[280px] flex gap-y-2 gap-x-8 flex-col flex-wrap">
-                {links[0]?.categories?.map(category => {
+                {links[submenuSelected]?.categories?.map(category => {
                     return(
                         <li key={category.id}>
                             <a className="text-xs" href={category.url}>{category.title}</a>
