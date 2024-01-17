@@ -1,13 +1,9 @@
-import Dropdown from "./Dropdown.jsx";
-import {useRef} from "react";
 import navItemsData from "../data/navItemsData.jsx";
+import Dropdown from "./Dropdown.jsx";
 
-
-export default function MenuItems({onMouseEnter,setDropdown,selected,dropdown,item}){
-    const listRef = useRef()
-
+export default function MenuItems({onMouseEnter,setSelected,selected,item}){
     return(
-        <li ref={listRef}>
+        <li>
             {item.submenu ? (
                 <div>
                         <a
@@ -18,7 +14,7 @@ export default function MenuItems({onMouseEnter,setDropdown,selected,dropdown,it
                         >
                             {item.title}
                         </a>
-                        {dropdown && <Dropdown dropdown={dropdown} links={navItemsData[selected]?.submenu} selected={selected} setDropdown={setDropdown}/>}
+                        {selected >= 0 && <Dropdown links={navItemsData[selected]?.submenu} selected={selected} setSelected={setSelected}/>}
                 </div>
             ) : (
                 <a href="#" className="hover:border-b hover:border-black text-sm">{item.title}</a>

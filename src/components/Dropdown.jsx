@@ -1,14 +1,15 @@
 import {useState} from "react";
 
-export default function Dropdown({links, selected, setDropdown}){
-    const [submenuSelected, setSubmenuSelected] = useState(0)
+export default function Dropdown({links, selected, setSelected}){
+    const [submenuSelected, setSubmenuSelected] = useState(-1)
 
     function handleMouseLeave(){
-        console.log("leave")
-        setDropdown(false)
+        setSelected(-1)
     }
 
-    console.log(links[submenuSelected])
+    function handleNestedSubMenuMouseEnter(id){
+        setSubmenuSelected(id)
+    }
 
     return (
         <div onMouseLeave={handleMouseLeave} className="flex absolute -z-10 left-0 top-0 bg-white text-sm min-w-full px-8 pt-20 pb-4">
@@ -23,8 +24,8 @@ export default function Dropdown({links, selected, setDropdown}){
                     </li>
                 </div>
                 <div className="space-y-3">
-                    {links.map((submenu, index) => (
-                        <li key={index}>
+                    {links?.map((submenu, index) => (
+                        <li key={index} onMouseEnter={handleNestedSubMenuMouseEnter}>
                             <a href={submenu.url}>{submenu.title}</a>
                         </li>
                     ))}
@@ -32,18 +33,24 @@ export default function Dropdown({links, selected, setDropdown}){
             </div>
 
             {/* nested submenu */}
-            <div>
-                <p className="pb-6 text-xs font-medium text-gray-500">CATEGORIES</p>
-                <ul className="h-[280px] flex gap-y-2 gap-x-8 flex-col flex-wrap">
-                    {links[submenuSelected]?.categories?.map(category => {
-                        return(
-                            <li key={category.id}>
-                                <a className="text-xs" href={category.url}>{category.title}</a>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </div>
+            <NestedSubMenu links={links}/>
         </div>
     );
+}
+
+function NestedSubMenu({links}){
+    return(
+        <div>
+            <p className="pb-6 text-xs font-medium text-gray-500">CATEGORIES</p>
+            <ul className="h-[280px] flex gap-y-2 gap-x-8 flex-col flex-wrap">
+                {links[0]?.categories?.map(category => {
+                    return(
+                        <li key={category.id}>
+                            <a className="text-xs" href={category.url}>{category.title}</a>
+                        </li>
+                    )
+                })}
+            </ul>
+        </div>
+    )
 }

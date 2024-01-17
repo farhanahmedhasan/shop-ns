@@ -5,6 +5,7 @@ const navItemsData = [
         url:'#',
         submenu: [
             {
+                id: 0,
                 title: 'CLOTHES',
                 url: '/#',
                 categories: [
@@ -86,6 +87,7 @@ const navItemsData = [
                 ]
             },
             {
+                id:1,
                 title: 'SHOES',
                 url: '/#',
                 categories: [
@@ -151,11 +153,11 @@ const navItemsData = [
                     },
                 ]
             },
-            { title: 'ACCESSORIES', url: '/#' },
-            { title: 'THE BERSHKA PRINT SHOP', url: '/#' },
-            { title: 'PERSONALIZATION', url: '/#' },
-            { title: 'GET THE LOOK', url: '/#' },
-            { title: 'SPECIAL PRICES', url: '/#' },
+            { id: 2, title: 'ACCESSORIES', url: '/#' },
+            { id: 3, title: 'THE BERSHKA PRINT SHOP', url: '/#' },
+            { id: 4, title: 'PERSONALIZATION', url: '/#' },
+            { id: 5, title: 'GET THE LOOK', url: '/#' },
+            { id: 6, title: 'SPECIAL PRICES', url: '/#' },
         ],
     },
     {
