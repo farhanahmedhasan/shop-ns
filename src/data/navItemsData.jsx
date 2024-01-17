@@ -6,6 +6,93 @@ const navItemsData = [
         submenu: [
             {
                 id: 0,
+                title: 'SALES UP TO -50%',
+                url: '/#',
+                categories: [
+                    {
+                        id:0,
+                        title:"Special prices Sales UPTO",
+                        url:'#'
+                    },
+                    {
+                        id:1,
+                        title:"The most sold",
+                        url:'#'
+                    },
+                    {
+                        id:2,
+                        title:"Coats",
+                        url:'#'
+                    },
+                    {
+                        id:3,
+                        title:"Pants",
+                        url:'#'
+                    },
+                    {
+                        id:4,
+                        title:"Jeans",
+                        url:'#'
+                    },
+                    {
+                        id:5,
+                        title:"Dresses and jumpsuits",
+                        url:'#'
+                    },
+                    {
+                        id:6,
+                        title:"Skirts and shorts",
+                        url:'#'
+                    },
+                    {
+                        id:7,
+                        title:"Sweatshirts",
+                        url:'#'
+                    },
+                    {
+                        id:8,
+                        title:"Sweaters and cardigans",
+                        url:'#'
+                    },
+                    {
+                        id:9,
+                        title:"T-shirts",
+                        url:'#'
+                    },
+                    {
+                        id:10,
+                        title:"Tops and corsets",
+                        url:'#'
+                    },
+                    {
+                        id:11,
+                        title:"Shirts and blouses",
+                        url:'#'
+                    },
+                    {
+                        id:12,
+                        title:"Spot",
+                        url:'#'
+                    },
+                    {
+                        id:13,
+                        title:"Collaborations®",
+                        url:'#'
+                    },
+                    {
+                        id:14,
+                        title:"Gift card®",
+                        url:'#'
+                    },
+                ]
+            },
+            {
+                id: 1,
+                title: 'NEW',
+                url: '/#',
+            },
+            {
+                id: 2,
                 title: 'CLOTHES',
                 url: '/#',
                 categories: [
@@ -87,7 +174,7 @@ const navItemsData = [
                 ]
             },
             {
-                id:1,
+                id:3,
                 title: 'SHOES',
                 url: '/#',
                 categories: [
@@ -154,7 +241,7 @@ const navItemsData = [
                 ]
             },
             {
-                id: 2,
+                id: 4,
                 title: 'ACCESSORIES',
                 url: '/#',
                 categories: [
@@ -215,10 +302,10 @@ const navItemsData = [
                     },
                 ]
             },
-            { id: 3, title: 'THE BERSHKA PRINT SHOP', url: '/#' },
-            { id: 4, title: 'PERSONALIZATION', url: '/#' },
-            { id: 5, title: 'GET THE LOOK', url: '/#' },
-            { id: 6, title: 'SPECIAL PRICES', url: '/#' },
+            { id: 5, title: 'THE BERSHKA PRINT SHOP', url: '/#' },
+            { id: 6, title: 'PERSONALIZATION', url: '/#' },
+            { id: 7, title: 'GET THE LOOK', url: '/#' },
+            { id: 8, title: 'SPECIAL PRICES', url: '/#' },
         ],
     },
     {
@@ -228,6 +315,93 @@ const navItemsData = [
         submenu: [
             {
                 id: 0,
+                title: 'SALES UP TO -50%',
+                url: '/#',
+                categories: [
+                    {
+                        id:0,
+                        title:"Special prices Sales UPTO MEN",
+                        url:'#'
+                    },
+                    {
+                        id:1,
+                        title:"The most sold",
+                        url:'#'
+                    },
+                    {
+                        id:2,
+                        title:"Coats",
+                        url:'#'
+                    },
+                    {
+                        id:3,
+                        title:"Pants",
+                        url:'#'
+                    },
+                    {
+                        id:4,
+                        title:"Jeans",
+                        url:'#'
+                    },
+                    {
+                        id:5,
+                        title:"Dresses and jumpsuits",
+                        url:'#'
+                    },
+                    {
+                        id:6,
+                        title:"Skirts and shorts",
+                        url:'#'
+                    },
+                    {
+                        id:7,
+                        title:"Sweatshirts",
+                        url:'#'
+                    },
+                    {
+                        id:8,
+                        title:"Sweaters and cardigans",
+                        url:'#'
+                    },
+                    {
+                        id:9,
+                        title:"T-shirts",
+                        url:'#'
+                    },
+                    {
+                        id:10,
+                        title:"Tops and corsets",
+                        url:'#'
+                    },
+                    {
+                        id:11,
+                        title:"Shirts and blouses",
+                        url:'#'
+                    },
+                    {
+                        id:12,
+                        title:"Spot",
+                        url:'#'
+                    },
+                    {
+                        id:13,
+                        title:"Collaborations®",
+                        url:'#'
+                    },
+                    {
+                        id:14,
+                        title:"Gift card®",
+                        url:'#'
+                    },
+                ]
+            },
+            {
+                id: 1,
+                title: 'NEW',
+                url: '/#',
+            },
+            {
+                id: 2,
                 title: 'SHOES',
                 url: '/#',
                 categories: [
@@ -309,7 +483,7 @@ const navItemsData = [
                 ]
             },
             {
-                id: 1,
+                id: 3,
                 title: 'ACCESSORIES',
                 url: '/#',
                 categories: [
@@ -391,7 +565,7 @@ const navItemsData = [
                 ]
             },
             {
-                id: 2,
+                id: 4,
                 title: 'THE BERSHKA PRINT SHOP',
                 url: '/#',
                 categories: [
@@ -472,9 +646,21 @@ const navItemsData = [
                     },
                 ]
             },
-            { title: 'PERSONALIZATION', url: '/#' },
-            { title: 'GET THE LOOK', url: '/#' },
-            { title: 'SPECIAL PRICES', url: '/#' },
+            {
+                id: 5,
+                title: 'PERSONALIZATION',
+                url: '/#'
+            },
+            {
+                id: 6,
+                title: 'GET THE LOOK',
+                url: '/#'
+            },
+            {
+                id: 7,
+                title: 'SPECIAL PRICES',
+                url: '/#'
+            },
         ],
     },
     {
@@ -484,6 +670,93 @@ const navItemsData = [
         submenu: [
             {
                 id: 0,
+                title: 'SALES UP TO -50%',
+                url: '/#',
+                categories: [
+                    {
+                        id:0,
+                        title:"Special prices Sales UPTO Teen",
+                        url:'#'
+                    },
+                    {
+                        id:1,
+                        title:"The most sold",
+                        url:'#'
+                    },
+                    {
+                        id:2,
+                        title:"Coats",
+                        url:'#'
+                    },
+                    {
+                        id:3,
+                        title:"Pants",
+                        url:'#'
+                    },
+                    {
+                        id:4,
+                        title:"Jeans",
+                        url:'#'
+                    },
+                    {
+                        id:5,
+                        title:"Dresses and jumpsuits",
+                        url:'#'
+                    },
+                    {
+                        id:6,
+                        title:"Skirts and shorts",
+                        url:'#'
+                    },
+                    {
+                        id:7,
+                        title:"Sweatshirts",
+                        url:'#'
+                    },
+                    {
+                        id:8,
+                        title:"Sweaters and cardigans",
+                        url:'#'
+                    },
+                    {
+                        id:9,
+                        title:"T-shirts",
+                        url:'#'
+                    },
+                    {
+                        id:10,
+                        title:"Tops and corsets",
+                        url:'#'
+                    },
+                    {
+                        id:11,
+                        title:"Shirts and blouses",
+                        url:'#'
+                    },
+                    {
+                        id:12,
+                        title:"Spot",
+                        url:'#'
+                    },
+                    {
+                        id:13,
+                        title:"Collaborations®",
+                        url:'#'
+                    },
+                    {
+                        id:14,
+                        title:"Gift card®",
+                        url:'#'
+                    },
+                ]
+            },
+            {
+                id: 1,
+                title: 'NEW',
+                url: '/#',
+            },
+            {
+                id: 2,
                 title: 'CLOTHES',
                 url: '/#',
                 categories: [
@@ -565,7 +838,7 @@ const navItemsData = [
                 ]
             },
             {
-                id: 1,
+                id: 3,
                 title: 'SHOES',
                 url: '/#',
                 categories: [
@@ -647,7 +920,7 @@ const navItemsData = [
                 ]
             },
             {
-                id: 2,
+                id: 4,
                 title: 'ACCESSORIES',
                 url: '/#',
                 categories: [
@@ -729,7 +1002,7 @@ const navItemsData = [
                 ]
             },
             {
-                id: 3,
+                id: 5,
                 title: 'GLASSES',
                 url: '/#',
                 categories: [
@@ -810,9 +1083,26 @@ const navItemsData = [
                     },
                 ]
             },
-            { title: 'THE BERSHKA PRINT SHOP', url: '/#' },
-            { title: 'PERSONALIZATION', url: '/#' },
-            { title: 'GET THE LOOK', url: '/#' },
+            {
+                id: 6,
+                title: 'THE BERSHKA PRINT SHOP',
+                url: '/#'
+            },
+            {
+                id: 7,
+                title: 'PERSONALIZATION',
+                url: '/#'
+            },
+            {
+                id: 8,
+                title: 'GET THE LOOK',
+                url: '/#'
+            },
+            {
+                id: 9,
+                title: 'SPECIAL PRICES',
+                url: '/#'
+            },
         ],
     },
 ];
