@@ -1,13 +1,16 @@
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment } from 'react'
+import {Fragment, useState} from 'react'
 
+import PromotionIcon from "../assets/icons/PromotionIcon.jsx";
+import DeleteIcon from "../assets/icons/DeleteIcon.jsx";
 import CloseIcon from "../assets/icons/CloseIcon.jsx";
 import HeartIcon from "../assets/icons/HeartIcon.jsx";
-import products from "../data/productData.jsx";
 import EditIcon from "../assets/icons/EditIcon.jsx";
-import DeleteIcon from "../assets/icons/DeleteIcon.jsx";
+import GiftIcon from "../assets/icons/GiftIcon.jsx";
+import products from "../data/productData.jsx";
 
 export default function Cart({isCartOpen, setIsCartOpen}) {
+    let [isGiftSelected, setIsGiftSelected] = useState(false)
 
     return (
         <Transition.Root show={isCartOpen} as={Fragment}>
@@ -36,9 +39,9 @@ export default function Cart({isCartOpen, setIsCartOpen}) {
                                 leaveFrom="translate-x-0"
                                 leaveTo="translate-x-full"
                             >
-                                {/* Cart header */}
                                 <Dialog.Panel className="pointer-events-auto w-screen max-w-md">
                                     <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
+                                        {/* Cart header */}
                                         <div className="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
                                             <button
                                                 type="button"
@@ -101,38 +104,45 @@ export default function Cart({isCartOpen, setIsCartOpen}) {
                                             </div>
 
                                             {/* Extra info promotional code, gifts */}
-                                            <div>
-                                                <div></div>
-                                                <div></div>
+                                            <div className="cursor-pointer flex items-center justify-between text-xs font-bold py-4">
+                                                <div className="flex items-center space-x-4">
+                                                    <PromotionIcon />
+                                                    <p>Promotional code</p>
+                                                </div>
+                                                <span>Add</span>
+                                            </div>
+                                            <div className="cursor-pointer flex items-center justify-between text-xs font-bold py-4 border-y" onClick={()=> setIsGiftSelected(!isGiftSelected)}>
+                                                <div className="flex items-center space-x-4">
+                                                    <GiftIcon />
+                                                    <p>Gift ticket</p>
+                                                </div>
+                                                <input type="checkbox" checked={isGiftSelected} readOnly={true}/>
                                             </div>
                                         </div>
 
-                                        <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
-                                            <div className="flex justify-between text-base font-medium text-gray-900">
+                                        {/* Cart footer */}
+                                        <div className="border-t border-gray-200 px-4 py-6 sm:px-6 space-y-3">
+                                            <div className="flex justify-between text-sm font-medium">
                                                 <p>Subtotal</p>
                                                 <p>$262.00</p>
                                             </div>
-                                            <p className="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
+                                            <div className="flex justify-between text-sm font-medium">
+                                                <p>Shipping costs</p>
+                                                <p className="font-medium text-green-500">FREE</p>
+                                            </div>
+                                            <div className="flex justify-between text-xl font-semibold">
+                                                <p>Total</p>
+                                                <p>$262.00</p>
+                                            </div>
+                                            <p className="text-xs text-[#b6b6b6]">(Taxes, if applicable, included)</p>
+
                                             <div className="mt-6">
                                                 <a
                                                     href="#"
-                                                    className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                                                    className="flex items-center justify-center rounded-md border border-transparent bg-green-500 px-6 py-3 font-semibold text-white hover:bg-green-600"
                                                 >
-                                                    Checkout
+                                                    CHECKOUT
                                                 </a>
-                                            </div>
-                                            <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
-                                                <p>
-                                                    or{' '}
-                                                    <button
-                                                        type="button"
-                                                        className="font-medium text-indigo-600 hover:text-indigo-500"
-                                                        onClick={() => setIsCartOpen(false)}
-                                                    >
-                                                        Continue Shopping
-                                                        <span aria-hidden="true"> &rarr;</span>
-                                                    </button>
-                                                </p>
                                             </div>
                                         </div>
                                     </div>
