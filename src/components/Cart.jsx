@@ -4,6 +4,8 @@ import { Fragment } from 'react'
 import CloseIcon from "../assets/icons/CloseIcon.jsx";
 import HeartIcon from "../assets/icons/HeartIcon.jsx";
 import products from "../data/productData.jsx";
+import EditIcon from "../assets/icons/EditIcon.jsx";
+import DeleteIcon from "../assets/icons/DeleteIcon.jsx";
 
 export default function Cart({isCartOpen, setIsCartOpen}) {
 
@@ -63,12 +65,12 @@ export default function Cart({isCartOpen, setIsCartOpen}) {
                                             </div>
 
                                             {/* Selected products */}
-                                            <div className="mt-2">
+                                            <div className="mt-2 border-b pb-6">
                                                 <div className="flow-root">
                                                     <ul>
                                                         {products.map((product) => (
                                                             <li key={product.id} className="flex py-4">
-                                                                <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
+                                                                <div className="h-32 w-28 flex-shrink-0 overflow-hidden border border-[#e6e6e6]">
                                                                     <img
                                                                         src={product.imageSrc}
                                                                         alt={product.imageAlt}
@@ -76,33 +78,32 @@ export default function Cart({isCartOpen, setIsCartOpen}) {
                                                                     />
                                                                 </div>
 
-                                                                <div className="ml-4 flex flex-1 flex-col">
+                                                                <div className="ml-4 flex flex-1 flex-col justify-between">
                                                                     <div>
-                                                                        <div className="flex justify-between text-base font-medium text-gray-900">
-                                                                            <h3>
-                                                                                <a href={product.href}>{product.name}</a>
-                                                                            </h3>
-                                                                            <p className="ml-4">{product.price}</p>
+                                                                        <div className="flex justify-between">
+                                                                            <p className="font-semibold">{product.price}</p>
+                                                                            <div className="flex items-center">
+                                                                                <EditIcon className="cursor-pointer"/>
+                                                                                <div className="h-4 w-0.5 bg-[#e6e6e6] mx-2"></div>
+                                                                                <DeleteIcon className="cursor-pointer"/>
+                                                                            </div>
                                                                         </div>
-                                                                        <p className="mt-1 text-sm text-gray-500">{product.color}</p>
-                                                                    </div>
-                                                                    <div className="flex flex-1 items-end justify-between text-sm">
-                                                                        <p className="text-gray-500">Qty {product.quantity}</p>
 
-                                                                        <div className="flex">
-                                                                            <button
-                                                                                type="button"
-                                                                                className="font-medium text-indigo-600 hover:text-indigo-500"
-                                                                            >
-                                                                                Remove
-                                                                            </button>
-                                                                        </div>
+                                                                        <a className="text-xs font-medium" href={product.href}>{product.name}</a>
+                                                                        <p className="text-xs text-[#b6b6b6]">{product.size}</p>
                                                                     </div>
+                                                                <button className="text-sm font-bold self-start">Move to favorites</button>
                                                                 </div>
                                                             </li>
                                                         ))}
                                                     </ul>
                                                 </div>
+                                            </div>
+
+                                            {/* Extra info promotional code, gifts */}
+                                            <div>
+                                                <div></div>
+                                                <div></div>
                                             </div>
                                         </div>
 
