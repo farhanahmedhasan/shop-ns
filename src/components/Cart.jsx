@@ -63,11 +63,11 @@ export default function Cart({isCartOpen, setIsCartOpen}) {
                                             </div>
 
                                             {/* Selected products */}
-                                            <div className="mt-8">
+                                            <div className="mt-2">
                                                 <div className="flow-root">
-                                                    <ul role="list" className="-my-4">
+                                                    <ul>
                                                         {products.map((product) => (
-                                                            <li key={product.id} className="flex py-6">
+                                                            <li key={product.id} className="flex py-4">
                                                                 <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                                                                     <img
                                                                         src={product.imageSrc}
