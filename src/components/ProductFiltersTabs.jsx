@@ -738,9 +738,9 @@ const coats = [
 export default function ProductFiltersTabs(){
     return(
         <section className="py-6">
-            <h3 className="font-medium text-xl mb-4 px-8">Coats</h3>
+            <h3 className="font-medium text-xl mb-4 px-4 lg:px-8">Coats</h3>
             <Tabs>
-                <TabList className="flex flex-wrap gap-3 mb-4 px-8">
+                <TabList className="flex flex-wrap gap-3 mb-4 px-4 lg:px-8">
                     {tabLists.map(tab => {
                         return <Tab key={tab.id} className="text-xs p-2 border border-[#e6e6e6] rounded-md cursor-pointer focus:outline-0" selectedClassName="font-bold text-white bg-black scale-[110%] rounded-md">{tab.name}</Tab>
                     })}

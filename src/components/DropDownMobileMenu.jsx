@@ -1,27 +1,24 @@
 import {useState} from "react";
 import navItemsData from "../data/navItemsData.jsx";
 
-export default function Dropdown({links, selected, setSelected}){
+export default function DropDownMobileMenu({links, selected}){
     const [submenuSelected, setSubmenuSelected] = useState(-1)
     const hasContainsGetLooks = navItemsData[selected]?.getLooks
-
-    function handleMouseLeave(){
-        setSelected(-1)
-    }
+    console.log("yo")
 
     function handleNestedSubMenuMouseEnter(id){
         setSubmenuSelected(id)
     }
 
     return (
-        <div onMouseLeave={handleMouseLeave} className={`flex absolute -z-10 left-0 top-0 bg-white text-sm min-w-full px-8 pt-20 pb-4 ${submenuSelected < 0 && "justify-between"}`}>
+        <div className={`bg-white text-sm min-w-full px-4 pt-10 pb-4`}>
             {/* main submenus */}
             <div className="mr-28">
-                <div className="space-y-3">
+                <ul className="space-y-3">
                     {links?.map((submenu, index) => (
-                        <li key={index} className={index <= 1 && "pb-2"}>
+                        <li key={index} className={index <= 1 ? "pb-2" : ""}>
                             <a
-                                className={(index === 0 || index === links.length - 1) && "text-red-500"}
+                                className={(index === 0 || index === links.length - 1) ? "text-red-500" : ""}
                                 href={submenu.url}
                                 onMouseEnter={()=> handleNestedSubMenuMouseEnter(submenu.id)}
                             >
@@ -29,7 +26,7 @@ export default function Dropdown({links, selected, setSelected}){
                             </a>
                         </li>
                     ))}
-                </div>
+                </ul>
             </div>
 
             {/* nested submenu */}
@@ -69,7 +66,7 @@ function GetTheLook({hasContainsGetLooks}){
                     return(
                         <div key={look.id} className="relative cursor-pointer hover:bg-black/50">
                             <img className="h-[280px] w-[180px] object-cover opacity-80" src={look.image} alt=""/>
-                        {/* hover */}
+                            {/* hover */}
                             <div className="absolute h-full w-full bg-black/20 top-0">
                                 <p className="absolute bottom-0 w-full text-white text-center p-4 font-semibold text-base">{look.title}</p>
                             </div>
