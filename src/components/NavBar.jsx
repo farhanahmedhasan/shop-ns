@@ -1,6 +1,7 @@
+import {useState} from "react";
+
 import navItemsData from "../data/navItemsData.jsx";
 import MenuItems from "./MenuItems.jsx";
-import {useState} from "react";
 
 export default function NavBar(){
     const [selected, setSelected] = useState(-1)

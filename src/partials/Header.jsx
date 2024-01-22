@@ -1,8 +1,9 @@
+import {useState} from "react";
+
+import NavBarMobile from "../components/NavBarMobile.jsx";
 import SearchIcon from "../assets/icons/SearchIcon.jsx";
 import NavBar from "../components/NavBar.jsx";
 import Cart from "../components/Cart.jsx";
-import {useState} from "react";
-import NavBarMobile from "../components/NavBarMobile.jsx";
 
 export default function Header(){
     const [isCartOpen, setIsCartOpen] = useState(false)
@@ -16,7 +17,10 @@ export default function Header(){
                 <div className="lg:hidden">
                     <NavBarMobile />
                 </div>
-                <a href="#" className="text-3xl lg:text-5xl">BERSHKA</a>
+                <a href="#">
+                    <img src="/images/logo_richie_rich_black.png" alt="logo" className="hidden w-20 object-contain lg:block"/>
+                    <img src="/images/logo_mobile_r_black.png" alt="logo" className="block w-8 lg:hidden"/>
+                </a>
 
                 {/* Right Top bar */}
                 <div className="flex items-center space-x-8">

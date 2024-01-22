@@ -1,4 +1,5 @@
 import {useState} from "react";
+
 import navItemsData from "../data/navItemsData.jsx";
 
 export default function Dropdown({links, selected, setSelected}){
@@ -14,7 +15,7 @@ export default function Dropdown({links, selected, setSelected}){
     }
 
     return (
-        <div onMouseLeave={handleMouseLeave} className={`flex absolute -z-10 left-0 top-0 bg-white text-sm min-w-full px-8 pt-20 pb-4 ${submenuSelected < 0 && "justify-between"}`}>
+        <div onMouseLeave={handleMouseLeave} className={`flex absolute -z-10 left-0 top-0 bg-white text-sm min-w-full px-8 pt-32 pb-4 ${submenuSelected < 0 && "justify-between"}`}>
             {/* main submenus */}
             <div className="mr-28">
                 <div className="space-y-3">
